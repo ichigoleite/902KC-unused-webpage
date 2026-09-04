@@ -1,0 +1,213 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="../jquery-3.2.1.min.js"></script>
+<script src="../jquery.balloon.min.js"></script>
+<style type="text/css">
+html,body {margin:0;padding:0;background-color:#888888;}
+.wizimg{position: relative;}
+.feed {line-height: '1';}
+</style>
+<script>
+  $(function() {
+    // 連打防止用フラグ
+    var flag = 0;
+    // 最初のバルーン表示
+    displayMiddleBalloon();
+    // 最初のバルーン切替
+    if($('#browse').attr('src') == 'top.png'){
+     setTimeout(changeFirstBalloon, 4000);
+     setTimeout(displayMiddleBalloon, 4400);
+     setTimeout(changeTop, 6000);
+    }
+
+    // キー押下イベント発生時に関数呼び出し
+    document.onkeydown = pageMove;
+
+    // キー押下時に呼び出される関数
+    function pageMove () {
+      if ($('#browse').attr('src') == 'topArrow.png' && event.keyCode == 112) {
+        android.showingTopArrow('false');
+        // バルーン表示終了
+        $('#browse').hideBalloon();
+        //画像差し替え
+        $('#browse').attr('src', 'menu1.png');
+        // バルーン文言差し替え
+        $('#browse').attr('title', '2.Press Multi Selector(Down) to select "Share page".');
+        // 0.5秒後にバルーン表示
+        setTimeout(displayBottomBalloon,500);
+      }
+      else if ($('#browse').attr('src') == 'menu1.png' && event.keyCode == 40) {
+        $('#browse').attr('src', 'menu2.png');
+      }
+      else if ($('#browse').attr('src') == 'menu2.png' && event.keyCode == 40) {
+        $('#browse').attr('src', 'menu3.png');
+      }
+      else if ($('#browse').attr('src') == 'menu3.png' && event.keyCode == 40) {
+        $('#browse').attr('src', 'menu4.png');
+      }
+      else if ($('#browse').attr('src') == 'menu4.png' && event.keyCode == 40) {
+        $('#browse').attr('src', 'menu5.png');
+      }
+      else if ($('#browse').attr('src') == 'menu5.png' && event.keyCode == 40) {
+        $('#browse').attr('src', 'menu6.png');
+      }
+      else if ($('#browse').attr('src') == 'menu6.png' && event.keyCode == 13) {
+        $('#browse').hideBalloon();
+        $('#browse').attr('src', 'share1.png');
+        $('#browse').attr('title', '3.Press Multi Selector(Down) to select "Continuance".');
+        setTimeout(displayBottomBalloon2,500);
+      }
+      else if ($('#browse').attr('src') == 'share1.png' && event.keyCode == 40) {
+        $('#browse').attr('src', 'share2.png');
+      }
+      else if ($('#browse').attr('src') == 'share2.png' && event.keyCode == 40) {
+        $('#browse').attr('src', 'share3.png');
+      }
+      else if ($('#browse').attr('src') == 'share3.png' && event.keyCode == 40) {
+        $('#browse').attr('src', 'share4.png');
+      }
+      else if ($('#browse').attr('src') == 'share4.png' && event.keyCode == 13 && flag == 0) {
+        // フラグ反転
+        flag = 1;
+        // バルーン表示終了
+        $('#browse').hideBalloon();
+        // データ送信4コマ送り
+        setTimeout(changeDisplayT1,  500);
+        setTimeout(changeDisplayT2, 1750);
+        setTimeout(changeDisplayT3, 3000);
+        setTimeout(changeDisplayT4, 4250);
+        // タブレット画像表示
+        setTimeout(changeLastDisplay, 6500);
+        // 終了ダイアログ表示
+        setTimeout(dialog,12500);
+      }
+    }
+  });
+
+function changeFirstBalloon(){
+    $('#browse').hideBalloon();
+    $('#browse').attr('title', '1.Press Mail key to display Menu.');
+}
+function changeTop(){
+    $('#browse').attr('src', 'topArrow.png');
+    android.showingTopArrow('true');
+}
+function changeDisplayT1(){
+    $('#browse').attr('src', 'transferring1.png');
+}
+function changeDisplayT2(){
+    $('#browse').attr('src', 'transferring2.png');
+}
+function changeDisplayT3(){
+    $('#browse').attr('src', 'transferring3.png');
+}
+function changeDisplayT4(){
+    $('#browse').attr('src', 'transferring4.png');
+    android.startContinuedLook();
+}
+function changeLastDisplay(){
+    $('#browse').attr('src', 'instruction_1.png');
+    $('#browse').attr('title', 'To go on to ​Continuity Viewing, press the notification arrived on your Tablet.');
+    setTimeout(displayTopBalloon, 1);
+}
+
+function changeMenu1Display(){
+    android.showingTopArrow('false');
+    // バルーン表示終了
+    $('#browse').hideBalloon();
+    //画像差し替え
+    $('#browse').attr('src', 'menu1.png');
+    // バルーン文言差し替え
+    $('#browse').attr('title', '2.Press Multi Selector(Down) to select "Share page".');
+    // 0.5秒後にバルーン表示
+    setTimeout(displayBottomBalloon,500);
+}
+
+function hideBalloon(){
+    $('#browse').hideBalloon();
+}
+function dialog(){
+    android.showLastDialog('ExperienceProcedureContinuedLook');
+}
+
+function displayTopBalloon(){
+  $('#browse').showBalloon({
+  tipSize: 0, offsetY: -200, offsetX: 000,
+  showDuration : 000, html: true,
+  css: {
+    padding: '15px',
+    fontSize: '200%',
+    fontWeight: 'bold',
+    lineHeight: '1.5',
+    backgroundColor: '#4169e1',
+    backgroundColor: '#4169e1',
+    opacity: '1.0',
+    minWidth: '400',
+    textAlign: 'left',
+    color: '#fff'
+  }});
+}
+
+function displayMiddleBalloon(){
+  $('#browse').showBalloon({
+  tipSize: 0, offsetY: -500, offsetX: 000,
+  showDuration : 1000, html: true,
+  css: {
+    padding: '15px',
+    fontSize: '200%',
+    fontWeight: 'bold',
+    lineHeight: '1.5',
+    backgroundColor: '#4169e1',
+    backgroundColor: '#4169e1',
+    opacity: '1.0',
+    minWidth: '400',
+    textAlign: 'left',
+    color: '#fff'
+  }});
+}
+
+function displayBottomBalloon(){
+  $('#browse').showBalloon({
+  tipSize: 0, offsetY: -630, offsetX: 000,
+  showDuration : 1000, html: true,
+  css: {
+    padding: '15px',
+    fontSize: '200%',
+    fontWeight: 'bold',
+    lineHeight: '1.5',
+    backgroundColor: '#4169e1',
+    backgroundColor: '#4169e1',
+    opacity: '1.0',
+    minWidth: '400',
+    textAlign: 'left',
+    color: '#fff'
+  }});
+}
+
+function displayBottomBalloon2(){
+  $('#browse').showBalloon({
+  tipSize: 0, offsetY: -670, offsetX: 000,
+  showDuration : 1000, html: true,
+  css: {
+    padding: '15px',
+    fontSize: '200%',
+    fontWeight: 'bold',
+    lineHeight: '1.5',
+    backgroundColor: '#4169e1',
+    backgroundColor: '#4169e1',
+    opacity: '1.0',
+    minWidth: '400',
+    textAlign: 'left',
+    color: '#fff'
+  }});
+}
+</script>
+</head>
+<body>
+<div class="wizimg">
+<img src="top.png" title="Here are the instructions how to transfer Continuity Viewing data from your Feature Phone to Tablet.<p class='feed'/>Let's follow the tutorial!" id="browse">
+</div>
+</body>
+</html>
