@@ -1,0 +1,619 @@
+<html> 
+<body> 
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi"> 
+<object data="http://delivery.ms.access-company.com/deco/viewport2.html" type="text/html"></object>
+<style type="text/css"> 
+<!--
+body
+{
+    -webkit-user-modify: read-only;
+    -webkit-user-select: none;
+    background-color: #111111;
+}
+
+#container {
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 480px;
+    height: 558px;
+    overflow: hidden;
+}
+
+
+
+/*左花火*/
+@-webkit-keyframes toumei
+{
+	0% { opacity: 0; }
+        45% { opacity: 0; }
+	50% { opacity: 0.6; }
+	55% { opacity: 1; }
+	60% { opacity: 0.6; }
+	65% { opacity: 1; }
+	70% { opacity: 0.6; }
+	75% { opacity: 1; }
+	80% { opacity: 0.6; }
+	100% { opacity: 0; }
+}
+
+@-webkit-keyframes move_s
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	20% { -webkit-transform: translate(1px, 1px);}
+	40% { -webkit-transform: translate(0px, 0px);}
+	60% { -webkit-transform: translate(1px, 1px);}
+	80% { -webkit-transform: translate(0px, 0px);}
+	100% { -webkit-transform: translate(1px, 1px);}
+}
+
+#star_w {
+    position: absolute;
+    top: 60px; left: 8px;
+    z-index: 1;
+	-webkit-animation-name: toumei, move_s;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: ease-in-out, linear;
+    -webkit-animation-duration: 4s, 0.8s;
+}
+
+/*左花火閉じ*/
+
+@-webkit-keyframes toumei3
+{
+	0% { opacity: 0; }
+        35% { opacity: 0; }
+	45% { opacity: 0.6; }
+	50% { opacity: 1; }
+	55% { opacity: 0.6; }
+	60% { opacity: 1; }
+	65% { opacity: 0.6; }
+	70% { opacity: 0.6; }
+	75% { opacity: 1; }
+	80% { opacity: 0.6; }
+	85% { opacity: 0.6; }
+	90% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+#star_y {
+    position: absolute;
+    top: 200px; left: 70px;
+    z-index: 1;
+	-webkit-animation-name: toumei3, move_s;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: ease-in-out, linear;
+    -webkit-animation-duration: 4s, 0.8s;
+}
+
+
+/*右花火*/
+@-webkit-keyframes toumei2
+{
+	0% { opacity: 0; }
+        55% { opacity: 0; }
+	60% { opacity: 0.6; }
+	65% { opacity: 1; }
+	70% { opacity: 0.6; }
+	75% { opacity: 1; }
+	80% { opacity: 0.6; }
+	85% { opacity: 0.6; }
+	100% { opacity: 0; }
+}
+
+#star_v {
+    position: absolute;
+    top: 100px; left: 180px;
+    z-index: 1;
+	-webkit-animation-name: toumei2, move_s;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: ease-in-out, linear;
+    -webkit-animation-duration: 4s, 0.8s;
+}
+/*右花火閉じ*/
+
+
+/*左ここから*/
+#shinecontainer > div {
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	-webkit-animation-name: toumei2;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 4s;
+	z-index: 2;
+}
+
+#shinecontainer > div > img {
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: normal;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 4s;
+}
+
+
+@-webkit-keyframes move_shine
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	20% { -webkit-transform: translate(0px, 0px);}
+	100% { -webkit-transform: translate(-70px, 0px);}
+}
+
+#shine_s {
+    position: absolute;
+    top: 128px; left: 86px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+}
+
+@-webkit-keyframes move_shine2
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	20% { -webkit-transform: translate(0px, 0px);}
+	100% { -webkit-transform: translate(70px, 0px);}
+}
+
+#shine_s2 {
+    position: absolute;
+    top: 128px; left: 86px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine2;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+}
+
+#shine_s3 {
+    position: absolute;
+    top: 128px; left: 86px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine3;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+}
+
+@-webkit-keyframes move_shine3
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	20% { -webkit-transform: translate(0px, 0px);}
+	100% { -webkit-transform: translate(0px, -50px);}
+}
+
+#shine_s4 {
+    position: absolute;
+    top: 128px; left: 86px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine4;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+}
+
+@-webkit-keyframes move_shine4
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	20% { -webkit-transform: translate(0px, 0px);}
+	100% { -webkit-transform: translate(0px, 50px);}
+}
+/*左ここまで*/
+
+
+/*右ここから*/
+
+
+#shine_s5 {
+    position: absolute;
+    top: 227px; left: 336px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine5;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+}
+
+@-webkit-keyframes move_shine5
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	50% { -webkit-transform: translate(0px, 0px);}
+	100% { -webkit-transform: translate(70px, 0px);}
+}
+
+#shine_s6 {
+    position: absolute;
+    top: 227px; left: 336px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine6;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+}
+
+@-webkit-keyframes move_shine6
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	50% { -webkit-transform: translate(0px, 0px);}
+	100% { -webkit-transform: translate(-70px, 0px);}
+}
+
+
+#shine_s7 {
+    position: absolute;
+    top: 227px; left: 336px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine7;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+}
+
+@-webkit-keyframes move_shine7
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	50% { -webkit-transform: translate(0px, 0px);}
+	100% { -webkit-transform: translate(0px, 70px);}
+}
+
+
+#shine_s8 {
+    position: absolute;
+    top: 227px; left: 336px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine8;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+}
+
+@-webkit-keyframes move_shine8
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	50% { -webkit-transform: translate(0px, 0px);}
+	100% { -webkit-transform: translate(0px, -70px);}
+}
+
+#shine_s9 {
+    position: absolute;
+    top: 297px; left: 186px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine5;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+
+}
+
+
+#shine_s10 {
+    position: absolute;
+    top: 297px; left: 186px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine6;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+
+}
+
+
+#shine_s11 {
+    position: absolute;
+    top: 297px; left: 186px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine7;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+
+}
+
+#shine_s12 {
+    position: absolute;
+    top: 297px; left: 186px;
+    z-index: 2;
+	-webkit-animation-name: toumei2, move_shine8;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, normal;
+	-webkit-animation-duration: 4s, 2s;
+
+}
+
+
+
+/*左start*/
+@-webkit-keyframes move_start
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	55% { -webkit-transform: translate(-20px, -410px);}
+	80% { -webkit-transform: translate(-20px, -410px);}
+	100% { -webkit-transform: translate(-20px, -400px);}
+}
+
+@-webkit-keyframes toumei_shine2
+{
+	0% { opacity: 0; }
+	10% { opacity: 1; }
+	55% { opacity: 1; }
+	60% { opacity: 1; }
+	65% { opacity: 0.5; }
+	100% { opacity: 0; }
+}
+
+#shine_b {
+    position: absolute;
+    top: 520px; left: 90px;
+    z-index: 2;
+	-webkit-animation-name: move_start, toumei_shine2;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, ease-in-out;
+	-webkit-animation-duration: 4s, 4s;
+}
+/*左start閉じ*/
+
+
+/*右start*/
+@-webkit-keyframes move_start2
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	10% { -webkit-transform: translate(0px, 0px);}
+	55% { -webkit-transform: translate(-20px, -310px);}
+	90% { -webkit-transform: translate(-20px, -310px);}
+	100% { -webkit-transform: translate(-20px, -300px);}
+}
+
+@-webkit-keyframes toumei_shine3
+{
+	0% { opacity: 0; }
+	10% { opacity: 0; }
+	20% { opacity: 1; }
+	65% { opacity: 1; }
+	70% { opacity: 1; }
+	75% { opacity: 0.5; }
+	100% { opacity: 0; }
+}
+
+#shine_b2 {
+    position: absolute;
+    top: 520px; left: 340px;
+    z-index: 2;
+	-webkit-animation-name: move_start2, toumei_shine3;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, ease-in-out;
+	-webkit-animation-duration: 4s, 4s;
+}
+/*右start閉じ*/
+
+@-webkit-keyframes move_start3
+{
+	0% { -webkit-transform: translate(0px, 0px);}
+	10% { -webkit-transform: translate(0px, 0px);}
+	45% { -webkit-transform: translate(-20px, -240px);}
+	55% { -webkit-transform: translate(-20px, -240px);}
+	100% { -webkit-transform: translate(-20px, -220px);}
+}
+
+@-webkit-keyframes toumei_shine4
+{
+	0% { opacity: 0; }
+	10% { opacity: 0; }
+	20% { opacity: 1; }
+	65% { opacity: 1; }
+	70% { opacity: 0.5; }
+	100% { opacity: 0; }
+}
+
+#shine_b3 {
+    position: absolute;
+    top: 520px; left: 190px;
+    z-index: 2;
+	-webkit-animation-name: move_start3, toumei_shine4;
+	-webkit-animation-iteration-count: infinite, infinite;
+	-webkit-animation-direction: normal, normal;
+	-webkit-animation-timing-function: ease-in-out, ease-in-out;
+	-webkit-animation-duration: 4s, 4s;
+}
+
+
+#title {
+    position: absolute;
+    top: 20px; left: 30px;
+    z-index: 3;
+}
+
+@-webkit-keyframes toumei_city
+{
+	0% { opacity: 0; }
+	45% { opacity: 0.2; }
+	65% { opacity: 0.8; }
+	70% { opacity: 0.5; }
+	100% { opacity: 0; }
+}
+
+#city1 {
+    position: absolute;
+    top: 386px; left: 0px;
+    z-index: 3;
+    -webkit-animation-name: toumei_city;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 4s;
+}
+
+#city2 {
+    position: absolute;
+    top: 386px; left: 240px;
+    z-index: 3;
+    -webkit-animation-name: toumei_city;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 4s;
+}
+
+
+/*右ここから*/
+
+
+
+
+@-webkit-keyframes rotate_star
+{
+    0%   { -webkit-transform: rotate(-50deg); }
+    100% { -webkit-transform: rotate(50deg); }
+}
+
+
+#star {
+    position: absolute;
+    top: 104px; left: 16px;
+    z-index: 3;
+	-webkit-animation-name: rotate_star;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-duration: 2s;
+	-webkit-animation-delay: 0.5s
+   -webkit-transform-origin: 50% 50%;
+}
+
+#star2 {
+    position: absolute;
+    top: 120px; left: 416px;
+    z-index: 3;
+	-webkit-animation-name: rotate_star;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   -webkit-animation-duration: 2s;
+   -webkit-transform-origin: 50% 50%;
+}
+
+#star_s {
+    position: absolute;
+    top: 20px; left: 410px;
+    z-index: 3;
+	-webkit-animation-name: rotate_star;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 2s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-delay: 0.5s
+}
+
+#star_s2 {
+    position: absolute;
+    top: 90px; left: 130px;
+    z-index: 3;
+	-webkit-animation-name: rotate_star;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 2s;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation-delay: 0.8s
+}
+
+#copy {
+    position: absolute;
+    top: 534px; left: 300px;
+    z-index: 3;
+}
+
+#msgArea
+{
+    position: absolute;
+    top: 160px;
+    Left: 30px;
+    width: 420px;
+    height: 370px;
+    color: #ffffff;
+    text-shadow: 0px 0px 0px #000000;
+    font-family: 'Lucida Grande', Georgia, Century, Arial, Helvetica, 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3';
+    /*font-style: italic;*/
+    font-weight: Regular;
+    text-align: center;
+    vertical-align: middle;
+    /*line-height:30px;*/
+    padding: 0px 0px;
+    z-index: 38;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+-->
+</style>
+
+<div id="container">
+
+
+<img id="star_w" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/white_star.png">
+<img id="star_v" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/red_star.png">
+<img id="star_y" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/yellow_star.png">
+
+<img id="shine_s" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+<img id="shine_s2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+<img id="shine_s3" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+<img id="shine_s4" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+
+<img id="shine_s5" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+<img id="shine_s6" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+<img id="shine_s7" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+<img id="shine_s8" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+
+<img id="shine_s9" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+<img id="shine_s10" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+<img id="shine_s11" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+<img id="shine_s12" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s.png">
+
+<img id="shine_b" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s2.png">
+<img id="shine_b2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s2.png">
+<img id="shine_b3" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/shine_s2.png">
+
+<img id="city1" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/city_01.png">
+<img id="city2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/city_02.png">
+
+<img id="star" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/star.png">
+<img id="star2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/star.png">
+<img id="star_s" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/star_s.png">
+<img id="star_s2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/star_s.png">
+
+<img id="title" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/title.png">
+<img id="copy" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/fireworks_2011/copy.png">
+
+<table>
+<tr><td>
+
+<div id="msgArea">
+&&MSG&&
+
+</div></td></tr>
+</table>
+
+</div>
+
+</body></html>
+

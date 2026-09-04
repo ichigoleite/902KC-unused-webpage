@@ -1,0 +1,452 @@
+<html> 
+<body> 
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi"> 
+<object data="http://delivery.ms.access-company.com/deco/viewport2.html" type="text/html"></object>
+<style type="text/css"> 
+<!--
+body
+{
+    -webkit-user-modify: read-only;
+    -webkit-user-select: none;
+    background-color: fffff;
+}
+
+#container {
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 480px;
+    height: 558px;
+    overflow: hidden;
+}
+
+
+#happy
+{
+    position: absolute;
+    top: 170px;
+    Left: 110px;
+    width: 280px;
+    height: 248px;
+    color: #353127;
+    /*font-size: 100%;*/
+    font-family: 'Lucida Grande', Georgia, Century, Arial, Helvetica, 'ＭＳ Ｐゴシック';
+    text-align: center;
+    padding: 0px 0px;
+    z-index: 6;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    font-size: 20px;
+    padding: 0px 0px;
+}
+
+#msg {
+	font-size: 19px;
+	padding: 0px 0px;
+}
+
+#backimg {
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 0;
+}
+
+#backimg02 {
+    position: absolute;
+    top: 0px; left: 240px;
+    z-index: 0;
+}
+
+#backimg03 {
+    position: absolute;
+    top: 279px; left: 0px;
+    z-index: 0;
+}
+
+#backimg04 {
+    position: absolute;
+    top: 279px; left: 240px;
+    z-index: 0;
+}
+
+#bird {
+    position: absolute;
+    top: 65px; left:205px;
+    z-index: 2;
+}
+
+@-webkit-keyframes rotateComment
+{
+   0%   { -webkit-transform: rotate(0deg); }
+   20%   { -webkit-transform: rotate(5deg); }
+   25%   { -webkit-transform: rotate(-5deg); }
+   30%   { -webkit-transform: rotate(5deg); }
+   35%   { -webkit-transform: rotate(-5deg); }
+   40%   { -webkit-transform: rotate(0deg); }
+  100%   { -webkit-transform: rotate(0deg); }
+}
+
+#bird_comment {
+    position: absolute;
+    top: 3px; left:275px;
+    z-index: 2;
+   -webkit-animation-name: fadeinComment, rotateComment;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-duration: 3s;
+   -webkit-animation-delay: 0s;
+}
+
+#present {
+    position: absolute;
+    top: 93px; left:346px;
+    z-index: 2;
+}
+
+@-webkit-keyframes movingDinosaur
+{
+   0%   { -webkit-transform: translate(0px, 0px); }
+   30%   { -webkit-transform: translate(0px, 0px); }
+   40%   { -webkit-transform: translate(0px, -10px); }
+   50%   { -webkit-transform: translate(0px, 0px); }
+   100% { -webkit-transform: translate(0px, 0px); }
+}
+
+#dinosaur{
+    position: absolute;
+    top: 194px; left:396px;
+    z-index: 2;
+   -webkit-animation-name: movingDinosaur;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-duration: 3s;
+   -webkit-animation-delay: 0s;
+}
+
+@-webkit-keyframes scaleGao
+{
+   0%   { -webkit-transform: scale(0.0, 0.0); }
+   30%   { -webkit-transform: scale(0.0, 0.0); }
+   40%   { -webkit-transform: scale(1.0, 1.0); }
+   50%   { -webkit-transform: scale(0.0, 0.0); }
+   100% { -webkit-transform: scale(0.0, 0.0); }
+}
+
+#dinosaur_gao{
+    position: absolute;
+    top: 290px; left:396px;
+    z-index: 2;
+   -webkit-animation-name: scaleGao;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-duration: 3s;
+   -webkit-animation-delay: 0s;
+}
+
+#milk{
+    position: absolute;
+    top: 350px; left:383px;
+    z-index: 2;
+}
+
+@-webkit-keyframes rotateGuita
+{
+   0%   { -webkit-transform: rotate(-5deg); }
+   50% { -webkit-transform: rotate(5deg); }
+   100%   { -webkit-transform: rotate(-5deg); }
+}
+
+#guitar{
+    position: absolute;
+    top: 434px; left:300px;
+    z-index: 2;
+   -webkit-animation-name: rotateGuita;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: linear;
+   -webkit-transform-origin: 50% 50%;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-delay: 0s;
+}
+
+@-webkit-keyframes movingOnpu
+{
+   0%   { -webkit-transform: translate(0px, 0px); }
+   100% { -webkit-transform: translate(-20px, -100px); }
+}
+
+@-webkit-keyframes fadein
+{
+   0%   { opacity: 0.0; }
+   10%   { opacity: 1.0; }
+   100% { opacity: 0.0; }
+}
+
+#guitar_onpu01{
+    position: absolute;
+    top: 440px; left:300px;
+    z-index: 2;
+   -webkit-animation-name: movingOnpu, fadein;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 1s;
+}
+
+#guitar_onpu02{
+    position: absolute;
+    top: 420px; left:360px;
+    z-index: 2;
+   -webkit-animation-name: movingOnpu, fadein;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+   -webkit-animation-duration: 3s;
+   -webkit-animation-delay: 2s;
+}
+
+#guitar_onpu03{
+    position: absolute;
+    top: 400px; left:330px;
+    z-index: 2;
+   -webkit-animation-name: movingOnpu, fadein;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+   -webkit-animation-duration: 3s;
+   -webkit-animation-delay: 3s;
+}
+
+
+#cake{
+    position: absolute;
+    top: 440px; left:197px;
+    z-index: 2;
+}
+
+@-webkit-keyframes fadein
+{
+   0%   { opacity: 0.0; }
+   50% { opacity: 1.0; }
+   100%   { opacity: 0.0; }
+}
+
+#cake2{
+    position: absolute;
+    top: 440px; left:197px;
+    z-index: 3;
+   -webkit-animation-name: fadein;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-delay: 0s;
+}
+
+#hands{
+    position: absolute;
+    top: 430px; left:60px;
+    z-index: 2;
+}
+
+#diamond{
+    position: absolute;
+    top: 356px; left:36px;
+    z-index: 2;
+}
+
+#diamond_kira1{
+    position: absolute;
+    top: 325px; left:36px;
+    z-index: 2;
+   -webkit-animation-name: fadein;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-delay: 1s;
+}
+
+#diamond_kira2{
+    position: absolute;
+    top: 325px; left:36px;
+    z-index: 2;
+   -webkit-animation-name: fadein;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-duration: 1s;
+   -webkit-animation-delay: 2s;
+}
+
+@-webkit-keyframes movingKiss_l
+{
+   0%   { -webkit-transform: translate(0px, 0px); }
+   50% { -webkit-transform: translate(0px, 20px); }
+   100%   { -webkit-transform: translate(0px, 0px); }
+}
+
+#kiss_l{
+    position: absolute;
+    top: 255px; left:40px;
+    z-index: 2;
+   -webkit-animation-name: movingKiss_l;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-delay: 0s;
+}
+
+@-webkit-keyframes movingKiss_m
+{
+   0%   { -webkit-transform: translate(0px, 0px); }
+   50% { -webkit-transform: translate(0px, -20px); }
+   100%   { -webkit-transform: translate(0px, 0px); }
+}
+
+#kiss_m{
+    position: absolute;
+    top: 207px; left:40px;
+    z-index: 2;
+   -webkit-animation-name: movingKiss_m;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-delay: 0s;
+}
+
+@-webkit-keyframes movingKiss_hart
+{
+   0%   { -webkit-transform: translate(0px, 0px); }
+   100% { -webkit-transform: translate(20px, 0px); }
+}
+
+@-webkit-keyframes fadeinHart
+{
+   0%   { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+#kiss_hart{
+    position: absolute;
+    top: 245px; left:80px;
+    z-index: 2;
+   -webkit-animation-name: movingKiss_hart, fadeinHart;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: narmal;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-duration: 2s;
+   -webkit-animation-delay: 0s;
+}
+
+#rabit{
+    position: absolute;
+    top: 109px; left:37px;
+    z-index: 2;
+}
+
+#wine{
+    position: absolute;
+    top: 60px; left:100px;
+    z-index: 2;
+}
+
+@-webkit-keyframes scaleup
+{
+    0%     { -webkit-transform: scale(1, 1); }
+    50%     { -webkit-transform: scale(0.8, 0.8); }
+    100% { -webkit-transform: scale(1, 1); }
+}
+
+@-webkit-keyframes winefadein
+{
+   0%   { opacity: 0.0; }
+   50% { opacity: 1.1; }
+   100%   { opacity: 0.0; }
+}
+
+#wine_star{
+    position: absolute;
+    top: 65px; left:90px;
+    z-index: 2;
+   -webkit-animation-name: scaleup, winefadein;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-duration: 3s;
+   -webkit-animation-delay: 0s;
+}
+
+-->
+</style>
+
+<div id="container">
+<img id="backimg" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/bg01.png">
+<img id="backimg02" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/bg02.png">
+<img id="backimg03" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/bg03.png">
+<img id="backimg04" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/bg04.png">
+<img id="bird" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/bird.png">
+<img id="bird_comment" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/bird_comment.png">
+<img id="present" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/present.png">
+<img id="dinosaur" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/dinosaur.png">
+<img id="dinosaur_gao" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/dinosaur_gao.png">
+<img id="milk" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/milk.png">
+<img id="guitar" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/guitar.png">
+<img id="guitar_onpu01" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/guitar_onpu.png">
+<img id="guitar_onpu02" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/guitar_onpu.png">
+<img id="guitar_onpu03" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/guitar_onpu.png">
+<img id="cake" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/cake.png">
+<img id="cake2" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/cake_2.png">
+<img id="hands" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/hands.png">
+<img id="diamond" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/diamond.png">
+<img id="diamond2" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/diamond2.png">
+<img id="diamond_kira1" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/diamond_kira1.png">
+<img id="diamond_kira2" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/diamond_kira2.png">
+<img id="kiss_l" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/kiss_l.png">
+<img id="kiss_m" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/kiss_m.png">
+<img id="kiss_hart" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/kiss_hart.png">
+<img id="rabit" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/rabit.png">
+<img id="wine" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/wine.png">
+<img id="wine_star" 
+src="http://delivery.ms.access-company.com/deco/sp/01/birthdaycard/wine_star.png">
+
+<table>
+   <tr><td>
+   <div id="happy">&&MSG&&<BR>
+</div>
+   </td></tr>
+</table>
+
+
+
+</div>
+
+</body></html>

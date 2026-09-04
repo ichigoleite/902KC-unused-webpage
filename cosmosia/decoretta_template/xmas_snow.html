@@ -1,0 +1,280 @@
+<html>
+<body>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi">
+<object data="http://delivery.ms.access-company.com/deco/viewport2.html" type="text/html"></object>
+<style type="text/css">
+<!--
+body{-webkit-user-modify: read-only;-webkit-user-select: none; background-color:#910c09;}
+#container{position: absolute;top: 0px; left: 0px; width: 480px;height: 558px; overflow: hidden;}
+#msgArea{
+    position: absolute;
+    top:180px;
+    Left: 50px;
+    width: 380px;
+    height: 185px;
+    color: #ffffff;
+    text-shadow: 0px 0px 0px #000000;
+    font-family: 'Lucida Grande', Georgia, Century, Arial, Helvetica, sans-serif, 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3';
+    /*font-style: italic;*/
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    /*line-height:30px;*/
+    padding: 0px 0px;
+    z-index: 60;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+
+#base1 {
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 0;
+}
+
+#base2 {
+    position: absolute;
+    bottom: 0px; left: 0px;
+    z-index: 0;
+}
+
+.mask{
+	-webkit-mask-image:url(img/mask.png);
+}
+
+#xmas {
+	-webkit-animation-name: logoMove1;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes logoMove1
+{
+    0%   { -webkit-transform: translate(300px, 0px); opacity:0.2; }
+    20%   { -webkit-transform: translate(0px, 0px); opacity:1.0; }
+    80%   { -webkit-transform: translate(0px, 0px); opacity:1.0; }
+    100%   { -webkit-transform: translate(-300px, 0px); opacity:0.2; }
+}
+
+#bg {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-name: bgOpacity;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: alternate, alternate;
+    -webkit-animation-timing-function: linear, linear;
+    -webkit-animation-duration: 3s;
+}
+
+
+@-webkit-keyframes rotate30
+{
+   0%   { -webkit-transform: rotate(-10deg);}
+   12%   { -webkit-transform: rotate(0deg);}
+   24%   { -webkit-transform: rotate(10deg);}
+   36%   { -webkit-transform: rotate(0deg);}
+   48%   { -webkit-transform: rotate(-10deg);}
+   60%   { -webkit-transform: rotate(0deg);}
+   72%   { -webkit-transform: rotate(10deg);}
+   84%   { -webkit-transform: rotate(0deg);}
+   100% { -webkit-transform: rotate(-10deg);}
+}
+
+.kaza1 {
+    z-index: 2;
+    opacity: 1;
+   -webkit-animation-name: rotate30;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-duration: 5s;
+   -webkit-animation-delay: 0s;
+}
+
+.kaza2 {
+    z-index: 2;
+    opacity: 1;
+   -webkit-animation-name: rotate30;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: linear;
+   -webkit-animation-duration: 8s;
+   -webkit-animation-delay: 0s;
+}
+
+
+#kaza1 {position: absolute;top: -80px; left: 50px;}
+#kaza2 {position: absolute;top: -180px; left: 150px;}
+#kaza3 {position: absolute;top: -120px; left: 300px;}
+#kaza4 {position: absolute;top: -150px; left: 400px;}
+#kaza5 {position: absolute;top: -100px; left: 240px;}
+#kaza6 {position: absolute;top: -140px; left: 370px;}
+
+
+@-webkit-keyframes rotate360
+{
+   0%   { -webkit-transform: rotate(0deg); opacity: 1.0;  }
+   50%   { -webkit-transform: rotate(180deg); opacity: 0.0;  }
+   100% { -webkit-transform: rotate(360deg);  opacity: 1.0;  }
+}
+
+.snow {
+    z-index: 2;
+    opacity: 1;
+   -webkit-animation-name: rotate360;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: linear;
+   -webkit-transform-origin: 50%,50%;
+   -webkit-animation-duration: 30s;
+   -webkit-animation-delay: 0s;
+}
+
+.snow2 {
+    z-index: 2;
+    opacity: 1;
+   -webkit-animation-name: rotate360;
+   -webkit-animation-iteration-count: infinite;
+   -webkit-animation-direction: normal;
+   -webkit-animation-timing-function: linear;
+   -webkit-transform-origin: 50%,50%;
+   -webkit-animation-duration: 40s;
+   -webkit-animation-delay: 0s;
+}
+
+#snow1 {position: absolute;top: 60px; left: 50px;}
+#snow2 {position: absolute;top: 30px; left: 270px;}
+#snow3 {position: absolute;top: 470px; left: 330px;}
+#snow4 {position: absolute;top: 470px; left: 30px;}
+#snow5 {position: absolute;top: 420px; left: 380px;}
+#snow6 {position: absolute;top: 60px; left: 370px;}
+
+
+#logo {
+    position: absolute;
+    top: 380px; left: 60px;
+    z-index: 0;
+}
+
+
+@-webkit-keyframes pikaOpacity
+{
+    0%   { opacity: 1.0; }
+    40%   { opacity: 1.0; }
+    50% { opacity: 0.65; }
+    60%   { opacity: 1.0; }
+    100%   { opacity: 1.0; }
+}
+
+
+@-webkit-keyframes pikaOpacity2
+{
+    0%   { opacity: 1.0; }
+    20%   { opacity: 1.0; }
+    30% { opacity: 0.65; }
+    40%   { opacity: 1.0; }
+    100%   { opacity: 1.0; }
+}
+
+	
+#pika1 {
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 30;
+}
+
+#pika2 {
+    position: absolute;
+    bottom: 0px; left: 0px;
+    z-index: 30;
+}
+
+#pika3 {
+    position: absolute;
+    top: 30px; left: 0px;
+    z-index: 0;
+}
+
+#pika24{
+    position: absolute;
+    bottom: 0px; left: 0px;
+    z-index: 30;
+}
+
+
+.pika {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-name: pikaOpacity;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: alternate, alternate;
+    -webkit-animation-timing-function: linear, linear;
+    -webkit-animation-duration: 2s;
+}
+
+
+.pika2 {
+    -webkit-animation-delay: 0s;
+    -webkit-animation-name: pikaOpacity2;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: alternate, alternate;
+    -webkit-animation-timing-function: linear, linear;
+    -webkit-animation-duration: 2s;
+}
+
+-->
+</style>
+
+<div id="container">
+<!--http://ux:acux@adam.access.co.jp/user/decoretta/xmas/big_snowman_2011-->
+<div id="bg"><img id="base1" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/bg2.jpg">
+<img id="base2" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/bg1.jpg"></div>
+
+<div id="pika1">
+  <img class="pika" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/pika.png">
+</div>  
+
+<div id="pika2">
+  <img class="pika" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/pika.png">
+</div>  
+
+<div id="pika3">
+  <img class="pika2" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/pika2.png">
+</div>   
+
+<div id="pika4">
+  <img class="pika2" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/pika2.png">
+</div>   
+ 
+ 
+<div id="logo" class="mask" ><img id="xmas" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/xmas.png" style="margin-left:60px;"></div>
+
+<div id="snow1"><img class="snow" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/snow1.png"> </div>
+<div id="snow2"><img class="snow2" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/snow2.png"> </div>
+<div id="snow3"><img class="snow" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/snow3.png"> </div>
+<div id="snow4"><img class="snow2" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/snow4.png"> </div>
+<div id="snow5"><img class="snow" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/snow5.png"> </div>
+<div id="snow6"><img class="snow" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/snow3.png"> </div>
+
+<div id="kaza1"><img class="kaza1" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/kaza1.png"> </div>
+<div id="kaza2"><img class="kaza2" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/kaza2.png"> </div>
+<div id="kaza3"><img class="kaza1" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/kaza3.png"> </div>
+<div id="kaza4"><img class="kaza2" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/kaza4.png"> </div>
+<div id="kaza5"><img class="kaza2" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/kaza5.png"> </div>
+<div id="kaza6"><img class="kaza1" src="http://delivery.ms.access-company.com/deco/Xmas_NewYear2013/xmas_snow/img/kaza6.png"> </div>
+
+
+<table>
+<tr><td>
+
+<div id="msgArea">
+&&MSG&&
+
+</div></td></tr>
+</table>
+
+
+</div>
+
+</body></html>

@@ -1,0 +1,401 @@
+<html> 
+<body> 
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi"> 
+<object data="http://delivery.ms.access-company.com/deco/viewport2.html" type="text/html"></object>
+<style type="text/css"> 
+<!--
+body
+{
+    -webkit-user-modify: read-only;
+    -webkit-user-select: none;
+    background-color: #000000;
+}
+
+#container {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 480px;
+    height: 558px;
+    overflow: hidden;
+}
+
+#savanna1 {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 30;
+}
+
+
+#savanna2 {
+
+    position: absolute;
+    top: 279px; left: 0px;
+    z-index: 30;
+}
+
+.bg {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 20s;
+}
+
+
+.bg2 {
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-timing-function: linear, linear;
+    -webkit-animation-duration: 20s, 20s;
+}
+
+.bg3 {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+}
+
+
+@-webkit-keyframes sunSpin
+{
+    0%   { -webkit-transform: rotate(-130deg); }
+    58% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(240deg); }
+}
+
+#sun {
+
+    position: absolute;
+    top: -120px; left: 480;
+    z-index: 18;
+
+
+    -webkit-animation-name: sunSpin;
+    -webkit-transform-origin: 100% 100%;
+}
+
+@-webkit-keyframes starOpacity
+{
+    0%  { opacity: 1.0; }
+    24%  { opacity: 1.0; }
+    32%  { opacity: 0.5; }
+    40%  { opacity: 0.0; }
+    76% { opacity: 0.0; }
+    80% { opacity: 1.0; }
+    100% { opacity: 1.0; }
+}
+
+
+#star {
+
+    position: absolute;
+    top: 10px; left: 7;
+    z-index: 16;
+    opacity: 0.0;
+
+    -webkit-animation-name: starOpacity;
+}
+
+
+@-webkit-keyframes cloudOpacity
+{
+    0%  { opacity: 0.1; }
+    36%  { opacity: 0.0; }
+    40%  { opacity: 0.0; }
+    64% { opacity: 1.0; }
+    70% { opacity: 1.0; }
+    78% { opacity: 0.5; }
+    84% { opacity: 0.1; }
+    100% { opacity: 0.1; }
+}
+
+@-webkit-keyframes cloudMove {
+    0%  { -webkit-transform: translate(0px, 0px); }
+    100%  { -webkit-transform: translate(960px, 0px); }
+}
+
+#cloud01 {
+
+    position: absolute;
+    top: -30px; left: -480px;
+    z-index: 20;
+    opacity: 1.0;
+
+    -webkit-animation-name: cloudMove, cloudOpacity;
+}
+
+#cloud02 {
+
+    position: absolute;
+    top: -30px; left: 0px;
+    z-index: 20;
+    opacity: 1.0;
+
+    -webkit-animation-name: cloudMove, cloudOpacity;
+}
+
+#cloud03 {
+
+    position: absolute;
+    top: -30px; left: -1440px;
+    z-index: 20;
+    opacity: 1.0;
+
+    -webkit-animation-name: cloudMove, cloudOpacity;
+}
+
+#cloud04 {
+
+    position: absolute;
+    top: -30px; left: -960px;
+    z-index: 20;
+    opacity: 1.0;
+
+    -webkit-animation-name: cloudMove, cloudOpacity;
+}
+
+
+@-webkit-keyframes balloonMove {
+    0%  { -webkit-transform: translate(0px, 350px); }
+    5%  { -webkit-transform: translate(0px, 350px); }
+    26%  { -webkit-transform: translate(0px, -320px); }
+    100%  { -webkit-transform: translate(0px, -320px); }
+}
+
+#balloon {
+
+    position: absolute;
+    top: 0px; left: 60px;
+    z-index: 17;
+
+    -webkit-animation-name: balloonMove;
+}
+
+#bg_night1-1 {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 10;
+
+    -webkit-animation-name: nightMove;
+
+}
+
+#bg_night1-2 {
+
+    position: absolute;
+    top: 0px; left: 240px;
+    z-index: 10;
+
+    -webkit-animation-name: nightMove;
+
+}
+
+@-webkit-keyframes nightMove {
+    0%  { -webkit-transform: translate(0px, 0px); }
+    6%  { -webkit-transform: translate(0px, 0px); }
+    40%  { -webkit-transform: translate(0px, -420px); }
+    100%  { -webkit-transform: translate(0px, -420px); }
+}
+
+
+#bg_sunset1-1 {
+
+    position: absolute;
+    top: -130px; left: 0px;
+    z-index: 8;
+
+    -webkit-animation-name: sunsetOpacity;
+
+}
+
+#bg_sunset1-2 {
+
+    position: absolute;
+    top: -130px; left: 240px;
+    z-index: 8;
+
+    -webkit-animation-name: sunsetOpacity;
+
+}
+
+@-webkit-keyframes sunsetOpacity{
+    0%  { opacity: 1.0; }
+    38% { opacity: 1.0; }
+    44% { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
+
+
+#bg_morning1 {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 7;
+
+    -webkit-animation-name: morningOpacity;
+}
+
+#bg_morning2 {
+
+    position: absolute;
+    top: 0px; left: 240px;
+    z-index: 7;
+
+    -webkit-animation-name: morningOpacity;
+}
+
+@-webkit-keyframes morningOpacity{
+    0%  { opacity: 1.0; }
+    42% { opacity: 1.0; }
+    48% { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
+
+
+#bg_noon1 {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 6;
+}
+
+#bg_noon2 {
+
+    position: absolute;
+    top: 0px; left: 240px;
+    z-index: 6;
+}
+
+#bg_sunset2-1 {
+
+    position: absolute;
+    top: 270px; left: 0px;
+    z-index: 7;
+
+    -webkit-animation-name: sunsetMove, sunsetOpacity2;
+
+}
+
+#bg_sunset2-2 {
+
+    position: absolute;
+    top: 270px; left: 240px;
+    z-index: 7;
+
+    -webkit-animation-name: sunsetMove, sunsetOpacity2;
+
+}
+
+@-webkit-keyframes sunsetMove {
+    0%  { -webkit-transform: translate(0px, 0px); }
+    66%  { -webkit-transform: translate(0px, 0px); }
+    76%  { -webkit-transform: translate(0px, -400px); }
+    100%  { -webkit-transform: translate(0px, -400px); }
+}
+
+
+@-webkit-keyframes sunsetOpacity2{
+    0%  { opacity: 1.0; }
+    80% { opacity: 1.0; }
+    90% { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
+
+
+
+#bg_night2-1 {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 8;
+
+    -webkit-animation-name: nightOpacity;
+
+}
+
+#bg_night2-2 {
+
+    position: absolute;
+    top: 0px; left: 240px;
+    z-index: 8;
+
+    -webkit-animation-name: nightOpacity;
+
+}
+
+@-webkit-keyframes nightOpacity{
+    0%  { opacity: 0.0; }
+    80% { opacity: 0.0; }
+    90% { opacity: 1.0; }
+    100% { opacity: 1.0; }
+}
+
+#msgArea
+{
+    position: absolute;
+    top: 290px;
+    left: 10px;
+    width: 460px;
+    height: 240px;
+    color: #ffffff;
+    /*text-shadow: 2px 2px 2px #c9c9c9;*/
+    font-family: 'Lucida Grande', Georgia, Century, Arial, Helvetica, 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3';
+    /*font-style: italic;*/
+    font-weight: Regular;
+    text-align: center;
+    vertical-align: middle;
+    /*line-height:30px;*/
+    padding: 0px 0px;
+    z-index: 38;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+-->
+</style>
+
+<div id="container"> 
+
+<img id="savanna1" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/savanna_01.png">
+<img id="savanna2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/savanna_02.png">
+
+
+<img id="sun" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/sun.png">
+<img id="star" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/star.png">
+
+<img id="cloud01" class="bg2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/cloud_01.png">
+<img id="cloud02" class="bg2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/cloud_02.png">
+<img id="cloud03" class="bg2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/cloud_01.png">
+<img id="cloud04" class="bg2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/cloud_02.png">
+
+<img id="balloon" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/balloon.png">
+
+<img id="bg_noon1" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_noon.png">
+<img id="bg_noon2" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_noon.png">
+<img id="bg_sunset1-1" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_sunset_01.png">
+<img id="bg_sunset1-2" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_sunset_02.png">
+<img id="bg_sunset2-1" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_sunset_01.png">
+<img id="bg_sunset2-2" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_sunset_02.png">
+<img id="bg_night1-1" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_night_01.png">
+<img id="bg_night1-2" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_night_02.png">
+<img id="bg_night2-1" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_night_01.png">
+<img id="bg_night2-2" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_night_02.png">
+<img id="bg_morning1" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_morning.png">
+<img id="bg_morning2" class="bg" src="http://delivery.ms.access-company.com/deco/sp/03/newyear/risingsun/image/bg_morning.png">
+
+
+<table>
+<tr><td>
+
+<div id="msgArea">
+&&MSG&&
+
+</div></td></tr>
+</table>
+
+
+</div>
+
+</body></html>

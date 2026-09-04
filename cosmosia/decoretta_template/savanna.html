@@ -1,0 +1,435 @@
+<html> 
+<body> 
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8"> 
+<meta name="viewport" content="width=device-width,target-densitydpi=high-dpi"> 
+<object data="http://delivery.ms.access-company.com/deco/viewport2.html" type="text/html"></object>
+<style type="text/css"> 
+<!--
+body
+{
+    -webkit-user-modify: read-only;
+    -webkit-user-select: none;
+    background-color: #ffffff;
+}
+
+#container {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    width: 480px;
+    height: 558px;
+    overflow: hidden;
+}
+
+#savanna1 {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 30;
+}
+
+
+#savanna2 {
+
+    position: absolute;
+    top: 279px; left: 0px;
+    z-index: 30;
+}
+
+@-webkit-keyframes elefantSpin
+{
+    0%   { -webkit-transform: rotate(-10deg); }
+    50% { -webkit-transform: rotate(10deg); }
+    100% { -webkit-transform: rotate(-10deg); }
+}
+
+@-webkit-keyframes kirinSpin
+{
+    0%   { -webkit-transform: rotate(0deg); }
+    50% { -webkit-transform: rotate(20deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}
+
+#elefant_nose_s {
+
+    position: absolute;
+    top: 231px; left: 83px;
+    z-index: 30;
+
+    -webkit-animation-name: elefantSpin;
+    -webkit-transform-origin: 50% 0%;
+    -webkit-animation-duration: 7s;
+}
+
+
+#elefant_nose_m {
+
+    position: absolute;
+    top: 215px; left: 197px;
+    z-index: 30;
+
+    -webkit-animation-name: elefantSpin;
+    -webkit-transform-origin: 50% 0%;
+    -webkit-animation-duration: 12s;
+}
+
+#kirin {
+
+    position: absolute;
+    top: 205px; left: 267px;
+    z-index: 30;
+
+    -webkit-animation-name: kirinSpin;
+    -webkit-transform-origin: 50% 100%;
+    -webkit-animation-duration: 7s;
+}
+
+.bg {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 20s;
+}
+
+
+.bg2 {
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-timing-function: linear, linear;
+    -webkit-animation-duration: 20s, 20s;
+}
+
+.bg3 {
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+
+}
+
+
+@-webkit-keyframes sunSpin
+{
+    0%   { -webkit-transform: rotate(0deg); }
+    35% { -webkit-transform: rotate(-70deg); }
+    48% { -webkit-transform: rotate(-82deg); }
+    100% { -webkit-transform: rotate(-360deg); }
+}
+
+#sun {
+
+    position: absolute;
+    top: -120px; left: 480;
+    z-index: 18;
+
+    -webkit-animation-name: sunSpin;
+    -webkit-transform-origin: 100% 100%;
+}
+
+
+@-webkit-keyframes moonOpacity
+{
+    0%  { opacity: 1.0; }
+    88% { opacity: 1.0; }
+    96% { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
+
+@-webkit-keyframes moonSpin
+{
+    0%   { -webkit-transform: rotate(10deg); }
+    46% { -webkit-transform: rotate(10deg); }
+    100% { -webkit-transform: rotate(-50deg); }
+}
+
+
+#moon {
+
+    position: absolute;
+    top: -70px; left: 430;
+    z-index: 18;
+
+    -webkit-animation-name: moonSpin, moonOpacity;
+    -webkit-transform-origin: 100% 100%;
+}
+
+@-webkit-keyframes starOpacity
+{
+    0%  { opacity: 0.0; }
+    50% { opacity: 0.0; }
+    55% { opacity: 1.0; }
+    85% { opacity: 1.0; }
+    95% { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
+
+
+#star {
+
+    position: absolute;
+    top: 10px; left: 7;
+    z-index: 16;
+    opacity: 0.0;
+
+    -webkit-animation-name: starOpacity;
+}
+
+
+@-webkit-keyframes cloudOpacity
+{
+    0%  { opacity: 1.0; }
+    24% { opacity: 1.0; }
+    34% { opacity: 0.5; }
+    90% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes cloudMove {
+    0%  { -webkit-transform: translate(0px, 0px); }
+    100%  { -webkit-transform: translate(960px, 0px); }
+}
+
+#cloud01 {
+
+    position: absolute;
+    top: -30px; left: -480px;
+    z-index: 20;
+    opacity: 1.0;
+
+    -webkit-animation-name: cloudMove, cloudOpacity;
+}
+
+#cloud02 {
+
+    position: absolute;
+    top: -30px; left: 0px;
+    z-index: 20;
+    opacity: 1.0;
+
+    -webkit-animation-name: cloudMove, cloudOpacity;
+}
+
+#cloud03 {
+
+    position: absolute;
+    top: -30px; left: -1440px;
+    z-index: 20;
+    opacity: 1.0;
+
+    -webkit-animation-name: cloudMove, cloudOpacity;
+}
+
+#cloud04 {
+
+    position: absolute;
+    top: -30px; left: -960px;
+    z-index: 20;
+    opacity: 1.0;
+
+    -webkit-animation-name: cloudMove, cloudOpacity;
+}
+
+
+@-webkit-keyframes balloonMove {
+    0%  { -webkit-transform: translate(0px, 350px); }
+    5%  { -webkit-transform: translate(0px, 350px); }
+    26%  { -webkit-transform: translate(0px, -320px); }
+    100%  { -webkit-transform: translate(0px, -320px); }
+}
+
+#balloon {
+
+    position: absolute;
+    top: 0px; left: 60px;
+    z-index: 17;
+
+    -webkit-animation-name: balloonMove;
+}
+
+
+#bg_noon1 {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 2;
+}
+
+#bg_noon2 {
+
+    position: absolute;
+    top: 0px; left: 240px;
+    z-index: 2;
+}
+
+
+@-webkit-keyframes sunsetMove {
+    0%  { -webkit-transform: translate(0px, 0px); }
+    24%  { -webkit-transform: translate(0px, 0px); }
+    36%  { -webkit-transform: translate(0px, -400px); }
+    50%  { -webkit-transform: translate(0px, -400px); }
+    100%  { -webkit-transform: translate(0px, -400px); }
+}
+
+#bg_sunset1 {
+
+    position: absolute;
+    top: 270px; left: 0px;
+    z-index: 4;
+
+    -webkit-animation-name: sunsetMove;
+}
+
+#bg_sunset2 {
+
+    position: absolute;
+    top: 270px; left: 240px;
+    z-index: 4;
+
+    -webkit-animation-name: sunsetMove;
+}
+
+@-webkit-keyframes nightMove {
+    0%  { -webkit-transform: translate(0px, 0px); }
+    42%  { -webkit-transform: translate(0px, 0px); }
+    50%  { -webkit-transform: translate(0px, 420px); }
+    86%  { -webkit-transform: translate(0px, 420px); }
+    100%  { -webkit-transform: translate(0px, 420px); }
+}
+
+#bg_night1 {
+
+    position: absolute;
+    top: -420px; left: 0px;
+    z-index: 6;
+
+    -webkit-animation-name: nightMove;
+}
+
+#bg_night2 {
+
+    position: absolute;
+    top: -420px; left: 240px;
+    z-index: 6;
+
+    -webkit-animation-name: nightMove;
+}
+
+
+@-webkit-keyframes morningOpacity{
+    0%  { opacity: 0.0; }
+    78% { opacity: 0.0; }
+    86% { opacity: 1.0; }
+    94% { opacity: 1.0; }
+    100% { opacity: 1.0; }
+}
+
+#bg_morning1 {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 8;
+
+    -webkit-animation-name: morningOpacity;
+}
+
+#bg_morning2 {
+
+    position: absolute;
+    top: 0px; left: 240px;
+    z-index: 8;
+
+    -webkit-animation-name: morningOpacity;
+}
+
+@-webkit-keyframes noonOpacity{
+    0%  { opacity: 0.0; }
+    86% { opacity: 0.0; }
+    94% { opacity: 1.0; }
+    100% { opacity: 1.0; }
+}
+
+#bg_noon02-1 {
+
+    position: absolute;
+    top: 0px; left: 0px;
+    z-index: 10;
+
+    -webkit-animation-name: noonOpacity;
+}
+
+#bg_noon02-2 {
+
+    position: absolute;
+    top: 0px; left: 240px;
+    z-index: 10;
+
+    -webkit-animation-name: noonOpacity;
+}
+
+
+
+#msgArea
+{
+    position: absolute;
+    top: 290px;
+    left: 28px;
+    width: 424px;
+    height: 240px;
+    color: #ffffff;
+    /*text-shadow: 2px 2px 2px #c9c9c9;*/
+    font-family: 'Lucida Grande', Georgia, Century, Arial, Helvetica, 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3';
+    /*font-style: italic;*/
+    font-weight: Regular;
+    text-align: center;
+    vertical-align: middle;
+    /*line-height:30px;*/
+    padding: 0px 0px;
+    z-index: 38;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    letter-spacing: 0px;
+    font-size: 20px;
+}
+-->
+</style>
+
+<div id="container"> 
+
+<img id="savanna1" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/savanna_01.png">
+<img id="savanna2" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/savanna_02.png">
+
+<img id="elefant_nose_s" class="bg3" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/elefant_nose_s.png">
+<img id="elefant_nose_m" class="bg3" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/elefant_nose_m.png">
+<img id="kirin" class="bg3" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/kirin.png">
+
+<img id="sun" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/sun.png">
+<img id="moon" class="bg2" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/moon.png">
+
+<img id="star" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/star.png">
+
+
+<img id="cloud01" class="bg2" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/cloud_01.png">
+<img id="cloud02" class="bg2" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/cloud_02.png">
+<img id="cloud03" class="bg2" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/cloud_01.png">
+<img id="cloud04" class="bg2" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/cloud_02.png">
+
+<img id="balloon" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/balloon.png">
+
+<img id="bg_noon1" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/bg_noon.png">
+<img id="bg_noon2" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/bg_noon.png">
+<img id="bg_sunset1" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/bg_sunset_01.png">
+<img id="bg_sunset2" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/bg_sunset_02.png">
+<img id="bg_night1" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/bg_night_01.png">
+<img id="bg_night2" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/bg_night_02.png">
+<img id="bg_morning1" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/bg_morning.png">
+<img id="bg_morning2" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/bg_morning.png">
+<img id="bg_noon02-1" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/bg_noon.png">
+<img id="bg_noon02-2" class="bg" src="http://delivery.ms.access-company.com/deco/sp/01/savanna/bg_noon.png">
+
+
+<table>
+<tr><td>
+<div id="msgArea">&&MSG&&
+</div></td></tr>
+</table>
+
+
+</div>
+
+</body></html>
