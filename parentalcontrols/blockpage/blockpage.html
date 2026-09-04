@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport" />
+<base href="file:///android_asset/" />
+<script src="blockpage.js" defer></script>
+<link rel="stylesheet" href="blockpage.css" />
+<title><!--strBlockTitle--></title>
+</head>
+<body>
+	<div id="header">
+		<img id="product_logo" src="logo.png" />
+	</div>
+	<div id="main">
+		<div id="blockinfo_area">
+			<div id="blockimg"></div>
+			<div id="blockinfo">
+				<div id="block_message_area">
+					<div class="message">見ることができません。</div>
+					<div class="reason"><!--ShowReasonBeg-->ブロック理由：<!--strState--><!--ShowReasonEnd--></div>
+				</div>
+			</div>
+		</div>
+		<!--strBlockCancelbeg-->
+		<form method="post" id="cancelRequestForm" action="<!--block_cancel_request_url-->">
+			<input type="hidden" name="block_reason" value="<!--block_reason-->" />
+			<input type="hidden" name="arid" value="<!--arid-->" />
+			<input type="hidden" name="user_id" value="<!--userid-->" />
+			<input type="hidden" name="url" value="<!--blockcancelurl-->"/>
+			<div id="block_off_request_area">
+				<div class="guide">見せてほしいときは、<br />保護者にお願いできます。</div>
+				<div class="message">
+					<textarea id="request_message_text" name="message" rows="2" cols="20" placeholder="理由を書いてください(32文字以内)"></textarea>
+				</div>
+				<input type="button" onclick="clickRequestButton();" value="見せてほしい" />
+				</script>
+			</div>
+		</form>
+		<!--strBlockCancelend-->
+		<!--strBlockOffbeg-->
+		<form method="post" name="ars_password" action="<!--blockcancelurl-->">
+			<input type="hidden" name="category" value="<!--block_reason-->" />
+			<input type="hidden" name="arid" value="<!--arid-->" />
+			<input type="hidden" name="uid" value="<!--userid-->" />
+			<input type="hidden" name="url" value="<!--blockcancelurl-->" />
+			<div id="block_off_self_area">
+				<div class="message">
+					<input type="password" autocorrect="off" autocapitalize="off" id="password_text" value="" placeholder="管理パスワードを入力してください" onKeyPress="return submitStop(event);"/>
+				</div>
+				<input type="button" value="ブロック解除" onclick="clickPasswordButton();" />
+			</div>
+		</form>
+		<!--strBlockOffend-->
+	</div>
+	<!--TypeCustomBeg-->
+	<div id="admin_page_area">
+		<p>ブロック設定を変更するには、<br />管理者設定が必要です。<br />管理者設定は、<br />保護者の方にお願いしてください。</p>
+	</div>
+	<!--TypeCustomEnd-->
+</body>
+</html>
