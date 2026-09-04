@@ -1,0 +1,544 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta name="viewport" content="width=device-width">
+<title>CosmoSia 更新起動用（日本語）</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+
+
+@-webkit-keyframes fuwari{
+
+100% { -webkit-transform: translate(50%, -30%) scale(1.5); opacity: 0; }
+90% { -webkit-transform: translate(45%, -12%) scale(1.5);  opacity: 0.8; }
+80% { -webkit-transform: translate(36%, 0%) rotate(0deg)  scale(1.5) }
+70% { -webkit-transform: translate(25%, 8%) rotate(10deg)  scale(1.5) }
+60% { -webkit-transform: translate(13%, 12%) rotate(0deg) scale(1.5)  }
+50% { -webkit-transform: translate(-1%, 15%) rotate(-10deg)  scale(1.5)  }
+40% { -webkit-transform: translate(-14%, 18%) rotate(0deg)  scale(1.5) }
+30% { -webkit-transform: translate(-27%, 24%) rotate(10deg)  scale(1.5) }
+20% { -webkit-transform: translate(-38%, 33%) rotate(0deg)  scale(1.5)  }
+10% { -webkit-transform: translate(-46%, 48%) scale(1.5); opacity: 0.8;  }
+0% { -webkit-transform: translate(-50%, 70%) scale(1.5); opacity: 0.1; }
+}
+
+@-webkit-keyframes dokidoki{
+
+100% { -webkit-transform:scale(1.5); }
+50% { -webkit-transform:scale(1.5); }
+40% { -webkit-transform:scale(1.3); }
+30% { -webkit-transform:scale(1.5); }
+20% { -webkit-transform:scale(0.8); }
+10% { -webkit-transform:scale(2.5); }
+0% { -webkit-transform:scale(1.5); }
+}
+
+@-webkit-keyframes ball{
+
+100% { -webkit-transform: translate(0%, -118%) scale(1.5); }
+70% { -webkit-transform: translate(0%, -80%) scale(1.5); }
+60% { -webkit-transform: translate(0%, -60%) scale(1.0,1.5); }
+55% { -webkit-transform: translate(0%, -20%) scale(1.0,1); }
+50% { -webkit-transform: translate(0%, 50%) scale(1.8,0.5); }
+49% { -webkit-transform: translate(0%, 49%) scale(1.5,0.5); }
+30% { -webkit-transform: translate(0%, -80%) scale(1.5,1.5); }
+10% { -webkit-transform: translate(0%, -110%) scale(1.5,1.5); }
+0% { -webkit-transform: translate(0%, -120%) scale(1.5); }
+}
+@-webkit-keyframes ball2{
+
+100% { -webkit-transform: translate(0%, -38%) scale(1.5); }
+70% { -webkit-transform: translate(0%, 0%) scale(1.5); }
+60% { -webkit-transform: translate(0%, 20%) scale(1.0,1.5); }
+55% { -webkit-transform: translate(0%, 60%) scale(1.0,1); }
+50% { -webkit-transform: translate(0%, 100%) scale(1.8,0.5); }
+49% { -webkit-transform: translate(0%, 99%) scale(1.5,0.5); }
+30% { -webkit-transform: translate(0%, 0%) scale(1.5,1.5); }
+10% { -webkit-transform: translate(0%, -30%) scale(1.5,1.5); }
+0% { -webkit-transform: translate(0%, -40%) scale(1.5); }
+}
+
+
+@-webkit-keyframes gakugaku{
+
+100% { -webkit-transform: translate(0%, 0%) scale(1.5); }
+90% { -webkit-transform: translate(-10%, 0%) scale(1.5); }
+80% { -webkit-transform: translate(10%, 0%) scale(1.5); }
+70% { -webkit-transform: translate(-10%, 0%) scale(1.5); }
+60% { -webkit-transform: translate(10%, 0%) scale(1.5); }
+50% { -webkit-transform: translate(-10%, 0%) scale(1.5); }
+40% { -webkit-transform: translate(10%, 0%) scale(1.5); }
+30% { -webkit-transform: translate(-10%, 0%) scale(1.5); }
+20% { -webkit-transform: translate(10%, 0%) scale(1.5); }
+10% { -webkit-transform: translate(-10%, 0%) scale(1.5); }
+0% { -webkit-transform: translate(10%, 0%) scale(1.5); }
+}
+@-webkit-keyframes furiko{
+
+100% { -webkit-transform: translate(-30%, 10%) scale(1.5) rotate(-45deg); }
+87.5% { -webkit-transform: translate(0%, -30%) scale(1.5) rotate(0deg); }
+75% { -webkit-transform: translate(30%, 10%) scale(1.5) rotate(45deg); }
+62.5% { -webkit-transform: translate(0%, -30%) scale(1.5) rotate(0deg); }
+50% { -webkit-transform: translate(-30%, 10%) scale(1.5) rotate(-45deg); }
+37.5% { -webkit-transform: translate(0%, -30%) scale(1.5) rotate(0deg); }
+25% { -webkit-transform: translate(30%, 10%) scale(1.5) rotate(45deg); }
+12.5% { -webkit-transform: translate(0%, -30%) scale(1.5) rotate(0deg); }
+0% { -webkit-transform: translate(-30%, 10%) scale(1.5) rotate(-45deg); }
+}
+
+@-webkit-keyframes agari{
+100% { -webkit-transform: translate(85%, -50%) scale(1.5); opacity: 0.5; }
+90% { -webkit-transform: translate(75%, -33%) scale(1.5);  opacity: 1; }
+10% { -webkit-transform: translate(-54%, 40%) scale(1.5); opacity: 1;  }
+0% { -webkit-transform: translate(-80%, 50%) scale(1.5); opacity: 0.1; }
+}
+
+@-webkit-keyframes sagari{
+100% { -webkit-transform: translate(12%, 45%) scale(1.5); opacity: 0.8; }
+25% { -webkit-transform: translate(10%, 45%) scale(1.5)  }
+20% { -webkit-transform: translate(-3%, 10%) scale(1.5) }
+15% { -webkit-transform: translate(-5%, 70%) scale(1.5,1) }
+14% { -webkit-transform: translate(-5%, 65%) scale(1.5,1.3) }
+10% { -webkit-transform: translate(-10%, -65%) scale(1.5)  }
+5% { -webkit-transform: translate(-20%, -100%) scale(1.5); opacity: 1;  }
+0% { -webkit-transform: translate(-30%, -150%) scale(1.5); opacity: 0.1; }
+}
+
+@-webkit-keyframes hirameki{
+0% { -webkit-transform: translate(0%, 200%) scale(0.1,1.5);}
+10% { -webkit-transform: translate(0%, 0%) scale(2);}
+15%{ -webkit-transform: translate(0%, 10%) scale(1.5);  }
+25%{ -webkit-transform: translate(0%, 10%) scale(1.5);  }
+30% { -webkit-transform: translate(0%, 0%) scale(2);}
+35%{ -webkit-transform: translate(0%, 10%) scale(1.5);  }
+40% { -webkit-transform: translate(0%, 0%) scale(2);}
+45%{ -webkit-transform: translate(0%, 10%) scale(1.5);  }
+90% { -webkit-transform: translate(0%, 0%) scale(1.5);}
+100% { -webkit-transform: translate(0%, -200%) scale(0.1,1.5);}
+}
+
+@-webkit-keyframes ido{
+0% { -webkit-transform: translate(-210%, -10%) scale(1.3,1.8);  }
+5% { -webkit-transform: translate(-200%, -10%) scale(1.5);}
+45% { -webkit-transform: translate(200%, -10%) scale(1.5);}
+50% { -webkit-transform: translate(210%, -10%) scale(1.3,1.8); }
+55% { -webkit-transform: translate(200%, -10%) scale(1.5);}
+95% { -webkit-transform: translate(-200%, -10%) scale(1.5);}
+100% { -webkit-transform: translate(-210%, -10%) scale(1.3,1.8);  }
+}
+
+@-webkit-keyframes ido_mugen{
+0% { -webkit-transform: translate(0%, 0%) scale(1.5);  }
+6% { -webkit-transform: translate(40%, -30%) scale(1.5);  }
+12% { -webkit-transform: translate(80%, -40%) scale(1.5);  }
+18% { -webkit-transform: translate(110%, -25%) scale(1.5);  }
+24% { -webkit-transform: translate(120%, 0%) scale(1.5);  }
+30% { -webkit-transform: translate(110%, 25%) scale(1.5);  }
+36% { -webkit-transform: translate(80%, 40%) scale(1.5);  }
+42% { -webkit-transform: translate(40%, 30%) scale(1.5);  }
+
+48% { -webkit-transform: translate(0%, 0%) scale(1.5);  }
+
+54% { -webkit-transform: translate(-40%, -30%) scale(1.5);  }
+60% { -webkit-transform: translate(-80%, -40%) scale(1.5);  }
+66% { -webkit-transform: translate(-110%, -25%) scale(1.5);  }
+72% { -webkit-transform: translate(-120%, 0%) scale(1.5);  }
+79% { -webkit-transform: translate(-110%, 25%) scale(1.5);  }
+87% { -webkit-transform: translate(-80%, 40%) scale(1.5);  }
+94% { -webkit-transform: translate(-40%, 30%) scale(1.5);  }
+100% { -webkit-transform: translate(0%, 0%) scale(1.5);  }
+
+}
+
+
+
+.fuwari {
+	width:1em;height:1em;
+	-webkit-animation-name: fuwari;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: cubic-bezier(0.0, 0.42, 1.0, 0.58);
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+
+.fuwari2 {
+	width:2em;height:2em;
+	-webkit-animation-name: fuwari;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+.dokidoki {
+	width:1em;height:1em;
+	-webkit-animation-name: dokidoki;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+
+.ball {
+	width:1em;height:1em;
+	-webkit-animation-name: ball;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+
+.gakugaku {
+	width:1em;height:1em;
+	-webkit-animation-name: gakugaku;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+.furiko {
+	width:1em;height:1em;
+	-webkit-animation-name: furiko;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+
+
+.agari{
+	width:1em;height:1em;
+	-webkit-animation-name: agari;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+
+.sagari{
+	width:1em;height:1em;
+	-webkit-animation-name: sagari;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration: 2s;
+line-height:-2em;
+}
+.hirameki{
+	width:1em;height:1em;
+	-webkit-animation-name: hirameki;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration: 2s;
+line-height:-2em;
+}
+
+.ido{
+	width:1em;height:1em;
+	-webkit-animation-name: ido;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-duration: 2s;
+line-height:-2em;
+}
+
+.ido_mugen{
+	width:1em;height:1em;
+	-webkit-animation-name: ido_mugen;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-duration: 2s;
+line-height:-2em;
+}
+
+
+h3,p{margin:5px;}
+
+html{
+overflow-x : hidden;
+overflow-y : auto;
+}
+
+body{
+overflow-x : hidden;
+overflow-y : auto;
+}
+-->
+</style>
+</head>
+
+<body>
+
+<!-- Image -->
+<p><img src="./images/ads.png" width="100%"></p>
+
+<!-- Title -->
+<h2><a name="page-top"></a>v3.2.0にアップデートしました<img src="./images/icon.png" width="80" height="80" class="ball"></h2>
+
+<!-- Welcom Message -->
+<p>
+<b>メール編集中に背景色が反映されないことがある問題を修正しました</b><img src="./images/emo_0059_airplain.png" width="80" height="80" class="fuwari"><br>
+<br>
+</p>
+<hr width="100%" size="1" color="#cacaca" noshade="noshade">
+
+<!-- News Section-->
+
+<h2>お知らせ</h2>
+<ul>
+<li>
+2014年9月5日に、ビジネス向けメーラー<a href="market://details?id=com.access_company.android.intray">Intray</a>をリリースしました。</br>
+ワークスタイルを変革したい方はお試し頂ければ幸いです。</br>
+詳細は<a href="http://intray.jp?refer=androidapp">Intray公式サイト</a>にて。
+</li>
+</ul>
+
+<hr width="100%" size="1" color="#cacaca" noshade="noshade">
+
+<!-- Contents Section-->
+<h2>更新情報</h2>
+<div class="category"><a name="320"></a>v3.2.0</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>メール編集中に背景色が反映されないことがある問題を修正</li>
+<li>特定の条件で強制終了する問題を修正</li>
+</ul>
+
+<div class="category"><a name="319"></a>v3.1.9</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>Android 4.4未満の端末でSMSが受信できない問題を修正</li>
+</ul>
+
+<div class="category"><a name="318"></a>v3.1.8</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>詳細画面でピンチイン/ピンチアウトによる本文の拡大縮小に対応</li>
+<li>画面右上にメニューボタンを表示</li>
+<li>アカウント追加時に前のアカウントが消えてしまうことがある不具合を修正</li>
+</ul>
+
+<div class="category"><a name="316"></a>v3.1.6</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>Wi-Fi接続時にメールが受信できないことがある不具合を修正</li>
+<li>mineo.jpアカウントの自動設定に対応</li>
+</ul>
+
+<div class="category"><a name="315"></a>v3.1.5</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>購入済みオプション機能が反映されないことがある不具合を修正</li>
+</ul>
+
+<div class="category"><a name="314"></a>v3.1.4</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>購入済みオプション機能を再ダウンロードせずに使えるように修正</li>
+<li>Android5端末で作成中の本文を長押しすると強制終了する問題を解消</li>
+</ul>
+
+<div class="category"><a name="313"></a>v3.1.3</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>メール作成時に絵文字を使用すると発生する問題を解消</li>
+</ul>
+
+<div class="category"><a name="312"></a>v3.1.2</div>
+<p><b>－新規機能－</b></p>
+<ul>
+<li>SDカードに保存されている絵文字を整理する機能追加</li>
+</ul>
+
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>Gmailにログインできない問題を修正</li>
+</ul>
+
+<div class="category"><a name="311"></a>v3.1.1</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>新着通知が消えてしまう問題を修正</li>
+</ul>
+
+<div class="category"><a name="310"></a>v3.1.0</div>
+<p><b>－新規機能－</b></p>
+<ul>
+<li><a href="market://details?id=com.access_company.android.nfcommunicator.uemojiplugin">Unicode絵文字表示プラグイン</a>と連携しUnicode絵文字が表示できるようになりました。</li>
+<li>zipファイルを自動解凍できるようになりました。</li>
+</ul>
+
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>件名が文字化けする問題を修正</li>
+<li>別のアカウントで送信されてしまう問題を修正</li>
+<li>POPで送信メールが保存されない問題を修正</li>
+<li>その他細かい改善、修正等</li>
+</ul>
+
+<div class="category"><a name="309"></a>v3.0.9</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>メール作成時に入力した絵文字がおかしくなってしまう問題を修正</li>
+<li>半角カナを送信出来るように対応</li>
+</ul>
+
+<div class="category"><a name="308"></a>v3.0.8</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>Unicode絵文字の送受信に対応</li>
+<li>KitKatで発生する問題を修正</li>
+<li>SMSで送信したメールが2通表示される問題を修正</li>
+<li>その他細かい改善、修正等</li>
+</ul>
+
+<div class="category"><a name="307"></a>v3.0.7</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>一部のアカウントで添付ファイル付きメールが受信できない問題を修正</li>
+</ul>
+
+<div class="category"><a name="306"></a>v3.0.6</div>
+<p><b>－新規機能－</b></p>
+<ul>
+<li>Hotmail/Outlook.comの設定が簡単に行えるようになりました！</li>
+</ul>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>iPhoneから送られたメールの添付ファイルがチャットモードで見やすくなりました。<br>
+ただし、既に受信済みのメールについては改善されません。</li>
+<li>チャットモードでの件名表示を改善<br>
+件名のあるメールでは自動的に件名表示され、件名入力は吹き出し画面のメニューから切り替えられるように変更しました。</li>
+<li>KitKatで発生する問題を一部修正</li>
+<li>いくつかのエラーレポートの修正</li>
+<li>その他細かい改善</li>
+</ul>
+
+<div class="category"><a name="305"></a>v3.0.5</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>新着問い合わせしても受信できない問題を修正</li>
+<li>その他細かい改善、修正等</li>
+</ul>
+
+新着問い合わせしても受信できない問題を修正しましたが、既に現象が発生している方につきましては、アカウントを一度削除して頂き、再度アカウント設定して頂くことで復旧可能となります。<br>
+お手数をお掛けして申し訳ございません。<br>
+
+<div class="category"><a name="304"></a>v3.0.4</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>吹き出しの開くボタンを押した時にスクロール位置がずれる問題を修正</li>
+<li>アカウント追加で設定したアカウントでプッシュ受信が出来ない問題を修正</li>
+<li>いくつかのエラーレポートの修正</li>
+<li>その他細かい改善</li>
+</ul>
+
+<div class="category"><a name="303"></a>v3.0.3</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>ドコモメールにて添付ファイル名の文字化けが発生する問題を修正</li>
+<li>デコレーション絵文字で動作が遅い問題を修正</li>
+<li>いくつかのエラーレポートの修正</li>
+</ul>
+
+<div class="category"><a name="302"></a>v3.0.2</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>一部の端末でインストールできない問題を修正</li>
+<li>ドコモメールにてデコメが見えない問題を修正</li>
+<li>ドコモメールにて送信済みメールが文字化けしたり2件になる問題を修正</li>
+<li>ドコモメールにて更新できない問題を修正</li>
+</ul>
+
+<div class="category"><a name="301"></a>v3.0.1</div>
+<p><b>－新規機能－</b></p>
+<ul>
+<li>SMSが使えるようになりました。</li>
+<li>POP3が使えるようになりました。<br>
+アカウント設定時に「その他」から設定するとPOP3が選択可能です。</li>
+<li>フォルダの作成と削除に対応しました。</li>
+</ul>
+
+<div class="category"><a name="205"></a>v2.0.5</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>ドコモメールの設定ウィザードを追加</li><br>
+<li>ドコモメールにてデコメが見えない問題を修正</li><br>
+<li>ドコモメールにて送信済みメール、未送信メールの同期がうまくいかない問題を修正</li>
+</ul>
+
+ドコモメールにてデコメが見えない問題を修正しましたが、既に受信済みのデコメにつきましては、アカウントを一度削除して頂き、再度アカウント設定して頂くことで復旧可能となります。<br>
+お手数をお掛けして申し訳ございません。<br>
+
+<div class="category"><a name="204"></a>v2.0.4</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>リッチテンプレートにクリスマス＆お正月コンテンツを追加</li><br>
+</ul>
+
+<div class="category"><a name="203"></a>v2.0.3</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>いくつかのエラーレポートの対応</li><br>
+<li>i.softbank.jpからYahoo!メールに送ったキャリア絵文字が文字化けする問題を修正</li><br>
+<li>端末容量不足エラーがひん発する問題を修正</li><br>
+</ul>
+
+<div class="category"><a name="202"></a>v2.0.2</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>AndroidOS4.3端末において、通知エリアに「com.access_company.android.nfcommunicator」と表示される問題を修正</li><br>
+<li>au oneメールの提供終了に伴う修正</li><br>
+</ul>
+
+<div class="category"><a name="201"></a>v2.0.1</div>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>国内利用時に強制的にオフラインモードになる問題を修正</li><br>
+<li>海外ローミング中にWiFi接続にてメールを取得できるように修正</li><br>
+<li>一部のOS4.0端末において、メール作成画面の本文欄タップが効きづらい問題を修正</li><br>
+<li>いくつかのエラーレポートの対応</li><br>
+</ul>
+
+<div class="category"><a name="200"></a>v2.0.0</div>
+<p>
+大幅バージョンアップ！より使いやすくなったCosmoSiaをぜひ使ってみてください！
+</p>
+<br>
+<p><b>－新規機能－</b></p>
+<ul>
+<li><font color=blue><b>ご好評頂いているチャットモードがついに正式リリース！</b></font><br>
+チャットモードでも着せ替えや背景変更ができるようになりました。<br>
+他にも、チャットモードで新着問合せができるようになるなど、細かい改善をしております。</li><br>
+
+<li><font color=blue><b>メールアドレス毎に着信通知設定が可能に！</b></font><br>
+設定＞（共通設定の）個別通知 から設定できます。</li><br>
+
+<li><font color=blue><b>大きい画像添付時の画像縮小に対応しました！</b></font></li><br>
+
+<li><font color=blue><b>通知ポップアップからデコレーション絵文字が入力できるようになりました！</b></font></li><br>
+
+<li><font color=blue><b>メール着信時に電源キーで音やバイブレーションを止められるようになりました。</b></font></li><br>
+
+<li><font color=blue><b>検索画面を強化し、より使いやすくなりました。</b></font></li><br>
+
+<li><font color=blue><b>新着問合せの仕様変更。</b></font><br>
+v1.5.6までは受信箱のみ確認していましたが、v2.0.0から受信箱＋送信済み＋下書きを確認するように動作を変更致しました。</li><br>
+
+</ul>
+<p><b>－改善・修正－</b></p>
+<ul>
+<li>いくつかのエラーレポートの対応</li>
+</ul>
+
+<!-- ********** Credit Line ********** -->
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><hr width="100%" size="1" color="#cacaca" noshade="noshade">
+<td><p class="fotter">&copy; 2011-2016 ACCESS CO., LTD. All rights reserved.</p></td>
+</tr>
+</table>
+<div></div><div></div>
+</body>
+</html>

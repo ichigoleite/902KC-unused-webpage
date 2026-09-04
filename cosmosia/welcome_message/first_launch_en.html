@@ -1,0 +1,296 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="content-style-type" content="text/css"> 
+<meta http-equiv="content-script-type" content="text/javascript"> 
+<meta name="viewport" content="width=device-width">
+<title>CosmoSia First Launch（English）</title> 
+<link href="styles.css" rel="stylesheet" type="text/css">
+<style type="text/css"> 
+<!-- 
+
+
+@-webkit-keyframes fuwari{
+
+100% { -webkit-transform: translate(50%, -30%) scale(1.5); opacity: 0; }
+90% { -webkit-transform: translate(45%, -12%) scale(1.5);  opacity: 0.8; }
+80% { -webkit-transform: translate(36%, 0%) rotate(0deg)  scale(1.5) }
+70% { -webkit-transform: translate(25%, 8%) rotate(10deg)  scale(1.5) }
+60% { -webkit-transform: translate(13%, 12%) rotate(0deg) scale(1.5)  }
+50% { -webkit-transform: translate(-1%, 15%) rotate(-10deg)  scale(1.5)  }
+40% { -webkit-transform: translate(-14%, 18%) rotate(0deg)  scale(1.5) }
+30% { -webkit-transform: translate(-27%, 24%) rotate(10deg)  scale(1.5) }
+20% { -webkit-transform: translate(-38%, 33%) rotate(0deg)  scale(1.5)  }
+10% { -webkit-transform: translate(-46%, 48%) scale(1.5); opacity: 0.8;  }
+0% { -webkit-transform: translate(-50%, 70%) scale(1.5); opacity: 0.1; }
+}
+
+@-webkit-keyframes dokidoki{
+
+100% { -webkit-transform:scale(1.5); }
+50% { -webkit-transform:scale(1.5); }
+40% { -webkit-transform:scale(1.3); }
+30% { -webkit-transform:scale(1.5); }
+20% { -webkit-transform:scale(0.8); }
+10% { -webkit-transform:scale(2.5); }
+0% { -webkit-transform:scale(1.5); }
+}
+
+@-webkit-keyframes ball{
+
+100% { -webkit-transform: translate(0%, -118%) scale(1.5); }
+70% { -webkit-transform: translate(0%, -80%) scale(1.5); }
+60% { -webkit-transform: translate(0%, -60%) scale(1.0,1.5); }
+55% { -webkit-transform: translate(0%, -20%) scale(1.0,1); }
+50% { -webkit-transform: translate(0%, 50%) scale(1.8,0.5); }
+49% { -webkit-transform: translate(0%, 49%) scale(1.5,0.5); }
+30% { -webkit-transform: translate(0%, -80%) scale(1.5,1.5); }
+10% { -webkit-transform: translate(0%, -110%) scale(1.5,1.5); }
+0% { -webkit-transform: translate(0%, -120%) scale(1.5); }
+}
+@-webkit-keyframes ball2{
+
+100% { -webkit-transform: translate(0%, -38%) scale(1.5); }
+70% { -webkit-transform: translate(0%, 0%) scale(1.5); }
+60% { -webkit-transform: translate(0%, 20%) scale(1.0,1.5); }
+55% { -webkit-transform: translate(0%, 60%) scale(1.0,1); }
+50% { -webkit-transform: translate(0%, 100%) scale(1.8,0.5); }
+49% { -webkit-transform: translate(0%, 99%) scale(1.5,0.5); }
+30% { -webkit-transform: translate(0%, 0%) scale(1.5,1.5); }
+10% { -webkit-transform: translate(0%, -30%) scale(1.5,1.5); }
+0% { -webkit-transform: translate(0%, -40%) scale(1.5); }
+}
+
+
+@-webkit-keyframes gakugaku{
+
+100% { -webkit-transform: translate(0%, 0%) scale(1.5); }
+90% { -webkit-transform: translate(-10%, 0%) scale(1.5); }
+80% { -webkit-transform: translate(10%, 0%) scale(1.5); }
+70% { -webkit-transform: translate(-10%, 0%) scale(1.5); }
+60% { -webkit-transform: translate(10%, 0%) scale(1.5); }
+50% { -webkit-transform: translate(-10%, 0%) scale(1.5); }
+40% { -webkit-transform: translate(10%, 0%) scale(1.5); }
+30% { -webkit-transform: translate(-10%, 0%) scale(1.5); }
+20% { -webkit-transform: translate(10%, 0%) scale(1.5); }
+10% { -webkit-transform: translate(-10%, 0%) scale(1.5); }
+0% { -webkit-transform: translate(10%, 0%) scale(1.5); }
+}
+@-webkit-keyframes furiko{
+
+100% { -webkit-transform: translate(-30%, 10%) scale(1.5) rotate(-45deg); }
+87.5% { -webkit-transform: translate(0%, -30%) scale(1.5) rotate(0deg); }
+75% { -webkit-transform: translate(30%, 10%) scale(1.5) rotate(45deg); }
+62.5% { -webkit-transform: translate(0%, -30%) scale(1.5) rotate(0deg); }
+50% { -webkit-transform: translate(-30%, 10%) scale(1.5) rotate(-45deg); }
+37.5% { -webkit-transform: translate(0%, -30%) scale(1.5) rotate(0deg); }
+25% { -webkit-transform: translate(30%, 10%) scale(1.5) rotate(45deg); }
+12.5% { -webkit-transform: translate(0%, -30%) scale(1.5) rotate(0deg); }
+0% { -webkit-transform: translate(-30%, 10%) scale(1.5) rotate(-45deg); }
+}
+
+@-webkit-keyframes agari{
+100% { -webkit-transform: translate(85%, -50%) scale(1.5); opacity: 0.5; }
+90% { -webkit-transform: translate(75%, -33%) scale(1.5);  opacity: 1; }
+10% { -webkit-transform: translate(-54%, 40%) scale(1.5); opacity: 1;  }
+0% { -webkit-transform: translate(-80%, 50%) scale(1.5); opacity: 0.1; }
+}
+
+@-webkit-keyframes sagari{
+100% { -webkit-transform: translate(12%, 45%) scale(1.5); opacity: 0.8; }
+25% { -webkit-transform: translate(10%, 45%) scale(1.5)  }
+20% { -webkit-transform: translate(-3%, 10%) scale(1.5) }
+15% { -webkit-transform: translate(-5%, 70%) scale(1.5,1) }
+14% { -webkit-transform: translate(-5%, 65%) scale(1.5,1.3) }
+10% { -webkit-transform: translate(-10%, -65%) scale(1.5)  }
+5% { -webkit-transform: translate(-20%, -100%) scale(1.5); opacity: 1;  }
+0% { -webkit-transform: translate(-30%, -150%) scale(1.5); opacity: 0.1; }
+}
+
+@-webkit-keyframes hirameki{
+0% { -webkit-transform: translate(0%, 200%) scale(0.1,1.5);}
+10% { -webkit-transform: translate(0%, 0%) scale(2);}
+15%{ -webkit-transform: translate(0%, 10%) scale(1.5);  }
+25%{ -webkit-transform: translate(0%, 10%) scale(1.5);  }
+30% { -webkit-transform: translate(0%, 0%) scale(2);}
+35%{ -webkit-transform: translate(0%, 10%) scale(1.5);  }
+40% { -webkit-transform: translate(0%, 0%) scale(2);}
+45%{ -webkit-transform: translate(0%, 10%) scale(1.5);  }
+90% { -webkit-transform: translate(0%, 0%) scale(1.5);}
+100% { -webkit-transform: translate(0%, -200%) scale(0.1,1.5);}
+}
+
+@-webkit-keyframes ido{
+0% { -webkit-transform: translate(-210%, -10%) scale(1.3,1.8);  }
+5% { -webkit-transform: translate(-200%, -10%) scale(1.5);}
+45% { -webkit-transform: translate(200%, -10%) scale(1.5);}
+50% { -webkit-transform: translate(210%, -10%) scale(1.3,1.8); }
+55% { -webkit-transform: translate(200%, -10%) scale(1.5);}
+95% { -webkit-transform: translate(-200%, -10%) scale(1.5);}
+100% { -webkit-transform: translate(-210%, -10%) scale(1.3,1.8);  }
+}
+
+@-webkit-keyframes ido_mugen{
+0% { -webkit-transform: translate(0%, 0%) scale(1.5);  }
+6% { -webkit-transform: translate(40%, -30%) scale(1.5);  }
+12% { -webkit-transform: translate(80%, -40%) scale(1.5);  }
+18% { -webkit-transform: translate(110%, -25%) scale(1.5);  }
+24% { -webkit-transform: translate(120%, 0%) scale(1.5);  }
+30% { -webkit-transform: translate(110%, 25%) scale(1.5);  }
+36% { -webkit-transform: translate(80%, 40%) scale(1.5);  }
+42% { -webkit-transform: translate(40%, 30%) scale(1.5);  }
+
+48% { -webkit-transform: translate(0%, 0%) scale(1.5);  }
+
+54% { -webkit-transform: translate(-40%, -30%) scale(1.5);  }
+60% { -webkit-transform: translate(-80%, -40%) scale(1.5);  }
+66% { -webkit-transform: translate(-110%, -25%) scale(1.5);  }
+72% { -webkit-transform: translate(-120%, 0%) scale(1.5);  }
+79% { -webkit-transform: translate(-110%, 25%) scale(1.5);  }
+87% { -webkit-transform: translate(-80%, 40%) scale(1.5);  }
+94% { -webkit-transform: translate(-40%, 30%) scale(1.5);  }
+100% { -webkit-transform: translate(0%, 0%) scale(1.5);  }
+
+}
+
+
+
+.fuwari {
+	width:1em;height:1em;
+	-webkit-animation-name: fuwari;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: cubic-bezier(0.0, 0.42, 1.0, 0.58);
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+
+.fuwari2 {
+	width:2em;height:2em;
+	-webkit-animation-name: fuwari;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+.dokidoki {
+	width:1em;height:1em;
+	-webkit-animation-name: dokidoki;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+
+.ball {
+	width:1em;height:1em;
+	-webkit-animation-name: ball;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-out;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+
+.gakugaku {
+	width:1em;height:1em;
+	-webkit-animation-name: gakugaku;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+.furiko {
+	width:1em;height:1em;
+	-webkit-animation-name: furiko;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+
+
+.agari{
+	width:1em;height:1em;
+	-webkit-animation-name: agari;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration: 1s;
+line-height:-2em;
+}
+
+.sagari{
+	width:1em;height:1em;
+	-webkit-animation-name: sagari;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration: 2s;
+line-height:-2em;
+}
+.hirameki{
+	width:1em;height:1em;
+	-webkit-animation-name: hirameki;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration: 2s;
+line-height:-2em;
+}
+
+.ido{
+	width:1em;height:1em;
+	-webkit-animation-name: ido;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-duration: 2s;
+line-height:-2em;
+}
+
+.ido_mugen{
+	width:1em;height:1em;
+	-webkit-animation-name: ido_mugen;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-duration: 2s;
+line-height:-2em;
+}
+
+
+h3,p{margin:5px;}
+
+html{
+overflow-x : hidden;
+overflow-y : auto;
+}
+
+body{
+overflow-x : hidden;
+overflow-y : auto;
+}
+--> 
+</style>
+</head>
+
+<body>
+
+<!-- Image -->
+<p><img src="./images/ads.png" width="100%"></p>
+
+<!-- Title -->
+<h2><a name="page-top"></a>Thank you for the installation.<img src="./images/emo_0013_prostration.png" width="80" height="80" class="sagari"></h2>
+
+<!-- Welcom Message -->
+<b>It is only CosmoSia that can carry out a decoration in a chat mode. </b><img src="./images/emo_0025_heart.png" width="80" height="80" class="fuwari"><br><br>
+<br>
+
+CosmoSia works lightly and is easy-to-use! and you can change look and feel! <img src="./images/emo_0058_helicopter.png" width="80" height="80" class="ido_mugen">The basic functions are enhancement. <img src="./images/emo_0043_light.png" width="80" height="80" class="hirameki"><br><br>
+Thank you for your help.<img src="./images/icon.png" width="80" height="80" class="ball">
+<br>
+
+<!-- ********** Credit Line ********** -->
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<tr><hr width="100%" size="1" color="#cacaca" noshade="noshade">
+<td><p>&copy; 2011-2016 ACCESS CO., LTD. All rights reserved.</p></td>
+</tr>
+</table>
+<div></div><div></div>
+</body>
+</html>

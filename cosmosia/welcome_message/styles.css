@@ -1,0 +1,118 @@
+/****** main Styles ******/
+body {
+	font-family:"Verdana","Arial","Helvetica","MS UI Gothic","Osaka",sans-serif;	margin-top: 20px;
+	color:#666666;
+}
+p,
+td,
+th,
+li {
+	font-size:18px;
+	line-height:140%;
+}
+
+ul, ol {
+	padding-left: 22px;
+}
+
+a {
+	color: #002469;
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.fotter {
+	font-size:14px;
+	line-height:140%;
+}
+
+/****** FAQ Styles ******/
+.toc {
+	padding-left: 22px;
+	text-decoration: underline;
+	background-image: url("img/arrow_right_green.gif");
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	color: #002469;
+	line-height:160%;
+}
+
+.t_indent {
+	padding-left: 22px;
+	vertical-align: top;
+	line-height:160%;
+}
+
+
+.category {
+	color: #666666;
+	font-weight: bold;
+	background-color:#ECEEF1;
+	padding:6px 4px;
+	margin-top:16px;
+	margin-bottom:2px;
+}
+
+img {
+	border: 0;
+}
+
+.ico {
+	vertical-align: bottom;
+	padding: 2px;
+	height: 14px;
+
+}
+
+.question {
+	font-weight: bold;
+	vertical-align: top;
+	padding:12px 2px 2px 2px;
+}
+
+.answer {
+	vertical-align: top;
+	padding:6px 2px 2px 2px;
+}
+
+.figure {
+	padding-top:12px;
+	padding-bottom:12px;
+	text-align:left;
+}
+
+.rlink {
+	text-align: right;
+}
+
+.arrowico {
+	vertical-align: middle;
+	padding: 2px;
+}
+
+.appico {
+	vertical-align: bottom;
+	padding: 2px;
+	height: 36px;
+}
+
+
+.dataTable th {
+	color: #666666;
+	font-weight: bold;
+	background-color:#ECEEF1;
+	text-align:center;
+}
+
+.dataTable td {
+	text-align:center;
+}
